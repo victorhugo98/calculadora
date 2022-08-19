@@ -3,6 +3,8 @@ const btn = document.querySelectorAll('[data-innertext]')
 const limparTecla = document.querySelector('[data-clean]')
 const backspace = document.querySelector('[data-back]')
 const igual = document.querySelector('[data-igual]')
+const userEventStart = ['touchstart','keydown']
+const userEventEnd= ['touchend', 'keyup']
 
 const btnArray = Array.from(btn)
 
@@ -78,8 +80,7 @@ function handleAddClass(e){
 
   
 }
-
-window.addEventListener('keydown', handleAddClass)
+userEventStart.forEach((userEvent)=> window.addEventListener(userEvent, handleAddClass))
 
 function handleRemoveClass(e){
   if(itensText.includes(e.key))
@@ -94,4 +95,4 @@ function handleRemoveClass(e){
   document.getElementById('back').classList.remove('ativo')
 
 }
-window.addEventListener('keyup', handleRemoveClass)
+userEventEnd.forEach((userEvent)=> window.addEventListener(userEvent, handleRemoveClass))
