@@ -1,0 +1,80 @@
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.fundo{
+  background-image:linear-gradient(45deg, rgb(156, 47, 47), rgb(172, 40, 66),crimson ) ;
+  background-size: 500% 100%;
+  height: 100vh;
+  color: white;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  animation: animarBackground 5s infinite alternate;
+}
+@keyframes animarBackground{
+  from{
+    background-position-x: 0%;
+  }
+  to{
+    background-position-x: 100%;
+  }
+}
+
+
+
+
+.my-name{
+  margin: 20px auto;
+  font-family: serif;
+}
+#resultado{
+  background-color: rgb(209, 209, 209);
+  max-width: 224px;
+  height: 40px;
+  margin: auto;
+  padding-right: 4px;
+  padding-top: 4px;
+  text-align: right;
+  font-size: 28px;
+  color: rgb(90, 90, 90);
+  font-family: monospace;
+  font-weight: bold;
+  overflow-x: hidden;
+}
+.calculadora{
+  background-color: rgba(0, 0, 0, .9);
+  margin: auto;
+  border-radius: 15px;
+  padding: 15px;
+
+}
+.calculadora-titulo{
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+button{
+  width: 50px;
+  height: 50px;
+  font-size: 25px;
+  background-color: rgb(54, 54, 54);
+  color: #fff;
+  cursor: pointer;
+  margin: 3px;
+  border: none;
+}
+button:hover,
+button.ativo{
+  background-color: black;
+  transition: .2s;
+}
+.igual{
+  height: 108px;
+  
+}
+.zero{
+  width: 108px;
+}

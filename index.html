@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Calculadora</title>
+</head>
+<body>
+
+  <div class="fundo">
+    <h1 class="my-name">Victor Hugo</h1>
+    <div class="calculadora">
+      <h1 class="calculadora-titulo">Calculadora</h1>
+      <p id="resultado"></p>
+      <table>
+        <tr>
+          <td><button data-clean id="esc" >C</button></td>
+          <td><button data-back id="back"><</button></td>
+          <td><button data-innertext id="/">/</button></td>
+          <td><button onclick="insert('*')" id="*">X</button></td>
+        </tr>
+        <tr>
+          <td><button data-innertext id="7">7</button></td>
+          <td><button data-innertext id="8">8</button></td>
+          <td><button data-innertext id="9">9</button></td>
+          <td><button data-innertext id="-">-</button></td>
+        </tr>
+        <tr>
+          <td><button data-innertext id="4">4</button></td>
+          <td><button data-innertext id="5">5</button></td>
+          <td><button data-innertext id="6">6</button></td>
+          <td><button data-innertext id="+">+</button></td>
+        </tr>
+        <tr>
+          <td><button data-innertext id="1">1</button></td>
+          <td><button data-innertext id="2">2</button></td>
+          <td><button data-innertext id="3">3</button></td>
+          <td rowspan="2"><button  data-igual class="igual" id="=">=</button></td>
+        </tr>
+        <tr>
+          <td colspan="2" ><button class="zero" data-innertext id="0">0</button></td>
+          <td><button data-innertext id=".">.</button></td>
+        </tr>
+      </table>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
